@@ -1,0 +1,9 @@
+.nosotrosContainer {
+    background-color: rgb(77, 37, 29);
+    color: white;
+    padding: 100px 200px;
+
+    h3, p {
+        margin: 10px 0;
+    }
+}
