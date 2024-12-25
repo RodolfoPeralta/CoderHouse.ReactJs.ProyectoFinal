@@ -1,25 +1,28 @@
 .headerContainer {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: (1, );
+    background-color: black;
     align-items: center;
-    margin: 0 auto;
+    height: 12vh;
 
     h1 {
-        font-family: "Oswald", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        /*text-align: center;*/
-        font-size: 70px;
-        color:rgb(77, 37, 29);
-        background-color: rgb(255,255,255);
+        grid-row: 1;
+        grid-column: 1 / 2;
+        margin: 0 20px;
+        font-size: 5vh;
+        color:white;
     }
 
     div.logo {
+        grid-row: 1;
+        grid-column: 2 / 3;
+        justify-self: end;
         margin: 0 20px;
+
+        img {
+            height: 10vh;
+        }
     }
 }
 

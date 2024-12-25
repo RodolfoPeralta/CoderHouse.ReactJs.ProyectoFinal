@@ -1,9 +1,16 @@
 .nosotrosContainer {
-    background-color: rgb(77, 37, 29);
+    background-image: url('../../assets/img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 100px 200px;
 
     h3, p {
         margin: 10px 0;
+    }
+
+    h3 {
+        font-size: 7vh;
     }
 }
