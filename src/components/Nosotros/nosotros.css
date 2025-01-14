@@ -1,0 +1,31 @@
+.nosotrosContainer {
+    color: #F3F2EF;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nosotrosContainer .img {
+    grid-column: 1 / 2;
+    background-image: url('../../assets/img/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nosotrosContainer .text {
+    grid-column: 2 / 3;
+    background: linear-gradient(to right,rgb(0,0,0,1), rgb(5,3,3,0.7));
+    padding: 20px;
+}
+
+.nosotrosContainer .text h3 {
+    margin: 10px 0;
+    font-size: 7vh;
+}
+
+.nosotrosContainer .text p {
+    margin: 10px 0;
+    text-align: justify;
+}

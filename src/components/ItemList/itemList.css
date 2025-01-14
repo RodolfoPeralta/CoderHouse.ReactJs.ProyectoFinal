@@ -2,4 +2,7 @@ div.itemList {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80vw;
 }

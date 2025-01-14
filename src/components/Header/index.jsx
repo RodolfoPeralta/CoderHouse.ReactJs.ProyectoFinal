@@ -1,5 +1,7 @@
-import logo from '../assets/img/logo.png';
-import './styles/header.css';
+import logo from '../../assets/img/logo.png';
+import '../Header/header.css';
+
+// Component
 
 const Header = () => {
 

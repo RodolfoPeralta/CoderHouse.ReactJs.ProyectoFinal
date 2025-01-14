@@ -1,0 +1,14 @@
+.footerContainer {
+    background-color: #050303;
+    color: #F3F2EF;
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.footerContainer p {
+    padding: 10px;
+}
+
+.footerContainer div div.logo img {
+    height: 8vh;
+}

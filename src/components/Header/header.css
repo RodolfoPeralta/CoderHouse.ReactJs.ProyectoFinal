@@ -1,0 +1,30 @@
+.headerContainer {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: (1, );
+    background-color: #050303;
+    align-items: center;
+    height: 12vh;
+}
+
+.headerContainer h1 {
+    grid-row: 1;
+    grid-column: 1 / 2;
+    margin: 0 20px;
+    font-size: 5vh;
+    color: #F3F2EF;
+}
+
+.headerContainer div.logo {
+    grid-row: 1;
+    grid-column: 2 / 3;
+    justify-self: end;
+    margin: 0 20px;
+}
+
+.headerContainer div.logo img {
+    height: 10vh;
+}
+
+
+

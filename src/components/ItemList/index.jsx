@@ -1,8 +1,9 @@
-import './styles/itemList.css';
+import '../ItemList/itemList.css';
+import Item from '../Item';
 
-import Item from './Item';
+// Component
 
-const ItemList = ({products}) => {
+const ItemList = ({products = []}) => {
     return(
         <div className='itemList'>
             {products.map(product => 
