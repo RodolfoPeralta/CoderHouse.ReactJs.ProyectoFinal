@@ -12,6 +12,7 @@ Listado de funcionalidades.
 2. Visualización dinámica de productos: Datos obtenidos en tiempo real desde Firestore.
 3. Gestión del carrito de compras: Manejo eficiente del carrito mediante hooks de React.
 4. Variables de entorno: Configuración de parámetros sensibles mediante variables de entorno.
+5. Persistencia de sesión: Almacenamiento del estado de inicio de sesión en Local Storage.
 
 ## Tecnologías utilizadas
 
