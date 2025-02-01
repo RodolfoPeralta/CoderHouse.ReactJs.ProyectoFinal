@@ -21,6 +21,25 @@ Listado de funcionalidades.
 - Firebase: Autenticación y base de datos Firestore.
 - CSS/Styled Components: Estilos y diseño atractivo.
 
+## Instalación
+
+Para clonar e instalar la aplicación:
+
+~~~
+# Clonar el repositorio
+git clone https://github.com/RodolfoPeralta/CoderHouse.ReactJs.ProyectoFinal.git
+
+# Entrar al directorio del proyecto
+cd CoderHouse.ReactJs.ProyectoFinal
+
+# Instalar dependencias
+npm install
+
+# Iniciar el servidor de desarrollo
+npm run dev
+~~~
+
+
 ## Configuración de la base de datos
 
 Es necesario crear un archivo .env en la raíz del proyecto y definir las siguientes variables:
