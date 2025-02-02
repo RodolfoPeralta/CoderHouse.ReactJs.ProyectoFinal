@@ -67,3 +67,4 @@ VITE_measurementId= tu-key
 - Control global del stock de productos utilizando el Hook useReducer.
 - Seguimiento de la compra del usuario.
 - Ampliación listado de productos.
+- Diseño Responsivo.
