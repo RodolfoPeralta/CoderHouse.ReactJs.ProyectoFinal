@@ -2,25 +2,28 @@ import '../ItemDetail/itemDetail.css';
 import ItemCount from '../ItemCount';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useCart } from '../../context/CartContext';
 
 
 // Component
 
-const ItemDetail = ({ data }) => {
+const ItemDetail = ({data}) => {
 
     const navigate = useNavigate();
     const [toCart, setToCart] = useState(false);
+    const { addItem } = useCart();
 
     // Functions
 
     function onAdd(count) {
         setToCart(true);
+        addItem(data, count);
     }
 
     return (
         <div className="itemDetailContainer">
             <div className="img">
-                <img src={data.img} alt={data.model} />
+                <img src={data.image} alt={data.model} />
             </div>
             <div className="content">
                 <h2>{data.brand} {data.model}</h2>
@@ -34,7 +37,7 @@ const ItemDetail = ({ data }) => {
                     </div>
 
                     <div className='back'>
-                        <button onClick={() => navigate(-1)}>Volver</button>
+                        <button onClick={() => navigate(-1)}>Seguir comprando</button>
                     </div>
                 </div>
             </div>

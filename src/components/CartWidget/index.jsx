@@ -1,16 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../CartWidget/cartWidget.css';
+import { useCart } from '../../context/CartContext';
 
 // Component
 
 const CartWidget = () => {
 
-    const [count, setCount] = useState(0);
-
+    const { totalItems } = useCart();
+  
     return(
         <div className="cartWidget">
             <i className="fa-solid fa-cart-shopping cart" style={{color: "#050303", width: "2vh"}}></i>
-            <span>{count}</span>
+            {totalItems() !== 0 && <span>{totalItems() || '0'}</span>}
         </div>
     )
 }

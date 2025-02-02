@@ -1,5 +1,6 @@
 import logo from '../../assets/img/logo.png';
 import '../Header/header.css';
+import UserLog from '../UserLog';
 
 // Component
 
@@ -11,6 +12,7 @@ const Header = () => {
             <div className="logo">
                 <img src={logo} alt="Logo Casa de las Guitarras" />
             </div>
+            <UserLog className="userLog"/>
         </div>
         
     )

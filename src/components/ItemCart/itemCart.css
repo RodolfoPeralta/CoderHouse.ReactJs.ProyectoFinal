@@ -1,0 +1,26 @@
+.itemCartContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1.5em;
+    border-bottom: 1px solid rgb(5,3,3, 0.3);
+    border-top: 1px solid rgb(5,3,3, 0.3);
+    align-items: center;
+    padding: 5px;
+}
+
+.itemCartContainer .delete button {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0.9);
+    border: none;
+    border-radius: 5px;
+    color: #F3F2EF;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.itemCartContainer .delete button:hover {
+    background-color: rgb(255, 19, 19, 0.6);
+}

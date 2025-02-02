@@ -1,29 +1,37 @@
 .headerContainer {
     display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: (1, );
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #050303;
     align-items: center;
+    justify-items: end;
     height: 12vh;
 }
 
 .headerContainer h1 {
-    grid-row: 1;
+    grid-row: 1 / 2;
     grid-column: 1 / 2;
     margin: 0 20px;
     font-size: 5vh;
+    justify-self: start;
     color: #F3F2EF;
 }
 
 .headerContainer div.logo {
-    grid-row: 1;
+    grid-row: 1 / 2;
     grid-column: 2 / 3;
-    justify-self: end;
+    justify-self: start;
     margin: 0 20px;
 }
 
 .headerContainer div.logo img {
     height: 10vh;
+}
+
+.headerContainer .userLog {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    justify-self: end;
 }
 
 

@@ -1,15 +1,15 @@
 .cartContainer {
-   background-color: #F3F2EF;
+    background-color: #F3F2EF;
     color: #050303;
     border: 1px solid rgba(5, 3, 3, 0.2);
     width: 40vw;
-    height: 60vh;
     border-radius: 15px;
     box-shadow: 0px 4px 6px rgba(5, 3, 3, 0.3);
-    margin: 50px auto;
+    margin: 60px auto;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    padding: 10px;
 }
 
 .cartContainer .buttons button {
@@ -20,6 +20,7 @@
     border-radius: 5px;
     color: #F3F2EF;
     transition: background-color 0.3s ease;
+    margin:5px;
 }
 
 .cartContainer .buttons button:hover {

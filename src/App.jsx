@@ -6,14 +6,15 @@ import Nosotros from './components/Nosotros';
 import Cart from './components/Cart';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Home from './components/Home';
-
+import LogForm from './components/LogForm';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import './app.css';
+import { useUser } from './context/UserContext';
+
 
 function App() {
 
-  const name = "Juan";
+  const { user } = useUser();
 
   return (
     <div className='appContainer'>
@@ -22,12 +23,13 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/categoría" element={<ItemListContainer name={name} />} />
-          <Route path="/categoría/:categoriaId" element={<ItemListContainer name={name} />} />
+          <Route path="/categoría" element={<ItemListContainer name={user?.name} />} />
+          <Route path="/categoría/:categoriaId" element={<ItemListContainer name={user?.name} />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/detalle/:detalleId" element={<ItemDetailContainer/>} />
+          <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
           <Route path="*" element={<h2>Error 404: Página no encontrada</h2>} />
+          <Route path="/login" element={<LogForm />} />
         </Routes>
         <Footer />
       </BrowserRouter>

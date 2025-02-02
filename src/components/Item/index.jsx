@@ -9,7 +9,7 @@ const Item = ({ product }) => {
         <div className="itemContainer">
 
             <div className='img'>
-                <img src={product.img} alt={product.model} />
+                <img src={product.image} alt={product.model} />
             </div>
             <h4>
                 {product.brand} {product.model}
@@ -20,7 +20,7 @@ const Item = ({ product }) => {
                 </p>
             </div>
             <h5>
-                {product.price} $
+                {product.price.toLocaleString("es-ES")} $
             </h5>
             <h6>
                 {product.stock} unidades en stock
