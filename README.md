@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Proyecto Final del curso de ReactJs de Coderhouse. "La casa de las guitarras" es una aplicación de e-commerce desarrollada con React, Vite y Firebase, diseñada para los amantes de la música. Los usuarios pueden explorar fácilmente el catálogo, agregar productos al carrito y realizar "compras" gracias a la integración con autenticación y almacenamiento de datos en Firestore. Con una interfaz intuitiva y una experiencia optimizada, este e-commerce es el lugar ideal para encontrar el instrumento perfecto.
+Proyecto Final del curso de ReactJs de Coderhouse. "La casa de las guitarras" es una aplicación de e-commerce desarrollada con React, Vite y Firebase, diseñada para los amantes de la música. Los usuarios pueden explorar fácilmente el catálogo, agregar productos al carrito y "realizar compras" gracias a la integración con autenticación y almacenamiento de datos en Firestore. Con una interfaz intuitiva y una experiencia optimizada, este e-commerce es el lugar ideal para encontrar el instrumento perfecto.
 
 ## Características principales
 
@@ -12,7 +12,7 @@ Listado de funcionalidades.
 2. Visualización dinámica de productos: Datos obtenidos en tiempo real desde Firestore.
 3. Gestión del carrito de compras: Manejo eficiente del carrito mediante hooks de React.
 4. Variables de entorno: Configuración de parámetros sensibles mediante variables de entorno.
-5. Persistencia de sesión: Almacenamiento del estado de inicio de sesión en Local Storage.
+5. Persistencia de sesión: Almacenamiento del estado e información de inicio de sesión en Local Storage.
 
 ## Tecnologías utilizadas
 
@@ -54,6 +54,14 @@ VITE_appId= tu-key
 VITE_measurementId= tu-key
 ~~~
 
-
-
 ## Enlace al Deploy en Netlify
+
+## Captura página de inicio
+
+![Página de inicio "La casa de las guitarras"](/public/img/home.jpg) 
+
+## Proximamente
+
+- Control global del stock de productos utilizando el Hook useReducer.
+- Seguimiento de la compra del usuario.
+- Ampliación listado de productos.

@@ -1,7 +1,11 @@
 import '../ItemCart/itemCart.css';
 import { useCart } from '../../context/CartContext';
 
+// Component
+
 const ItemCart = ({item}) => {
+
+    // Context
 
     const {deleteItem} = useCart();
 

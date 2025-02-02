@@ -5,11 +5,11 @@ import './itemCount.css';
 
 const ItemCount = ({initial, stock, onAdd}) => {
 
+    // States
+
     const [count, setCount] = useState(parseInt(initial));
 
-    useEffect(() => {
-        setCount(parseInt(initial));
-    }, [initial]);
+    // Functions
 
     function decrement() {
         if(count > initial) {
@@ -22,6 +22,13 @@ const ItemCount = ({initial, stock, onAdd}) => {
             setCount(count + 1);
         }
     }
+
+    // Use effects
+
+    useEffect(() => {
+        setCount(parseInt(initial));
+    }, [initial]);
+
     return(
         <div className='itemCountContainer'>
             <button className='decrement' onClick={decrement} disabled={count <= 1}>-</button>

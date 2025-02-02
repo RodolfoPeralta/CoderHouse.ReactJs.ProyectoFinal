@@ -5,20 +5,26 @@ const UserContext = createContext({user: null, isLoggedIn: false});
 
 const UserContextProvider = ({children}) => {
 
+    // States
+
     const [user, setUser] = useState(null);
 
+    // Functions
+
+    // Establishes a new user and saves its information to local storage
     function login(userData) {
         setUser(userData);
-
         const userJson = JSON.stringify(userData);
         localStorage.setItem("user", userJson);
     }
 
+    // Deletes all user information
     function logout() {
         setUser(null);
         localStorage.removeItem("user");
     }
 
+    // Retrieves user information from local storage
     function retrieveUserFromLocalstorage() {
         const retrieveUser = JSON.parse(localStorage.getItem("user"));
 
@@ -32,6 +38,8 @@ const UserContextProvider = ({children}) => {
             login(oldUser);
         }
     }
+
+    // Use Effects
 
     useEffect(() => {
         retrieveUserFromLocalstorage();

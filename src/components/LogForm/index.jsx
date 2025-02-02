@@ -6,10 +6,16 @@ import { useState } from 'react';
 
 const LogForm = () => {
 
+    // Context
+
     const { login } = useUser();
+
+    // States
 
     const [userData, setUserData] = useState({name: "", email: ""});
     const [isValidData, setIsValidData] = useState(false);
+
+    // Functions
 
     function onInputChange(e) {
         const { name, value } = e.target;

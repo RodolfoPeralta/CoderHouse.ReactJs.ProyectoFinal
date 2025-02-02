@@ -9,8 +9,16 @@ import { useCart } from '../../context/CartContext';
 
 const ItemDetail = ({data}) => {
 
+    // Navigation
+
     const navigate = useNavigate();
+
+    // States
+
     const [toCart, setToCart] = useState(false);
+
+    // Context
+    
     const { addItem } = useCart();
 
     // Functions

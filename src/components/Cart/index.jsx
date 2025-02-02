@@ -10,13 +10,20 @@ import { CircularIndeterminate } from '../CircularIndeterminate';
 
 const Cart = () => {
 
+    // Context
+
     const { cartList, totalPrice, clearAll } = useCart();
     const { user } = useUser();
+
+    // States
 
     const [completed, setCompleted] = useState(false);
     const [id, setId] = useState("");
     const [loading, setLoading] = useState(true);
 
+    // Functions
+
+    // Completes an order and saves in db
     const finishOrder = async () => {
         try {
             if (user?.isLoggedIn) {
@@ -49,7 +56,7 @@ const Cart = () => {
         }
     }
 
-    console.log(completed);
+    // Conditional Rendering
 
     if (cartList.length === 0 && completed == false) {
         return (

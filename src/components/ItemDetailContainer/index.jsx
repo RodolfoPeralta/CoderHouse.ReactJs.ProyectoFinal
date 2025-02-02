@@ -1,6 +1,5 @@
 import ItemDetail from "../ItemDetail";
 import { useEffect, useState } from 'react';
-import '../ItemDetailContainer/itemDetailContainer.css';
 import { useParams } from "react-router-dom";
 import { db } from "../../config/firebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
@@ -11,10 +10,16 @@ import { CircularIndeterminate } from "../CircularIndeterminate";
 
 const ItemDetailContainer = () => {
 
+    // States
+
     const [data, setData] = useState({});
     const [loading, setLoading] = useState(true);
 
+    // Params
+
     const { detalleId } = useParams();
+
+    // Use effects
 
     useEffect(() => {
 

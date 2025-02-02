@@ -1,10 +1,8 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import CartWidget from "../CartWidget"
 import '../NavBar/navBar.css';
 
 const NavBar = () => {
-
-    const location = useLocation();
 
     return (
         <div className="navContainer">
@@ -17,9 +15,7 @@ const NavBar = () => {
                 <NavLink to="/nosotros" className="menuItem">Nosotros</NavLink>
                 <NavLink to="/cart" className="menuItem">
                     <CartWidget />
-                </NavLink>
-                
-                
+                </NavLink> 
             </nav>
         </div>
     )

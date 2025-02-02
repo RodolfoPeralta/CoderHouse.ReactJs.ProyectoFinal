@@ -11,10 +11,16 @@ import { CircularIndeterminate } from '../CircularIndeterminate';
 
 const ItemListContainer = ({ name }) => {
 
+    // States
+
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    // Params
+
     const { categoriaId } = useParams();
+
+    // Use effects
 
     useEffect(() => {
 

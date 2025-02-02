@@ -1,11 +1,14 @@
-import { useState } from "react";
 import '../UserLog/userLog.css';
 import { Link } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 
 const UserLog = () => {
 
+    // Context
+
     const {user, logout} = useUser();
+
+    // Functions
 
     function handleLogs() {
         if(user?.isLoggedIn) {

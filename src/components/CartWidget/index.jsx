@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
 import '../CartWidget/cartWidget.css';
 import { useCart } from '../../context/CartContext';
 
 // Component
 
 const CartWidget = () => {
+
+    // Context
 
     const { totalItems } = useCart();
   
