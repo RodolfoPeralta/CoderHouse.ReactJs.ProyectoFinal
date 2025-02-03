@@ -8,7 +8,7 @@ Proyecto Final del curso de ReactJs de Coderhouse. "La casa de las guitarras" es
 
 Listado de funcionalidades.
 
-1. Autenticación de usuarios: Implementada con Firebase para un acceso seguro.
+1. Gestión de productos y compras: Manejo del catálogo de productos y compras realizadas mediante Firestore.
 2. Visualización dinámica de productos: Datos obtenidos en tiempo real desde Firestore.
 3. Gestión del carrito de compras: Manejo eficiente del carrito mediante hooks de React.
 4. Variables de entorno: Configuración de parámetros sensibles mediante variables de entorno.
@@ -68,3 +68,4 @@ VITE_measurementId= tu-key
 - Seguimiento de la compra del usuario.
 - Ampliación listado de productos.
 - Diseño Responsivo.
+- Autenticación de usuarios: Implementada con Firebase para un acceso seguro.
